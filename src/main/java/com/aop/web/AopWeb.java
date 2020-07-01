@@ -24,6 +24,7 @@ public class AopWeb {
 
     @GetMapping(value = "/obj")
     public UserVo objGet(UserVo vo) {
+        System.out.println(1 / 0);
         return vo;
     }
 
