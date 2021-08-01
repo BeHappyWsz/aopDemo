@@ -1,0 +1,32 @@
+server:
+    port: 8088
+
+
+config:
+  id: 1000
+  name: 123
+  likes:
+    - "aa"
+    - "bb"
+    - "cc"
+    - "dd"
+  keys:
+    key1: map1
+    key2: map2
+    key3: map3
+
+restUrl: http://localhost:8088/
+rName: ${random.value}
+#---
+
+spring:
+  config:
+    name: application
+  output:
+    ansi:
+      enabled: always
+logging:
+  level:
+    com.aop : warn
+  file:
+    name: logs.log
